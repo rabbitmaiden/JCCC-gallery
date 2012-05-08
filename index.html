@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <title>JoCoCruiseCrazy Photo Gallery</title>
+        <meta name="viewport" content="width=1000, user-scalable=no"/>
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?3.4.1/build/cssreset/cssreset-min.css&3.4.1/build/cssfonts/cssfonts-min.css&3.4.1/build/cssbase/cssbase-min.css">
+        <link type="text/css" rel="stylesheet" href="rsrc/style.css"/>
+    </head>
+    <body>
+        <div class="gate">
+            <div class="head">
+                JoCoCruiseCrazy 2 Photo Gallery
+            </div>
+            <div class="warning">
+                <div class="text">Hey! You appear to be using a phone or tablet. If you are on a 3G/4G/LTE connection you might not want to use this as it loads a lot of images and uses a lot of bandwidth. If you are okay with this, click the button below</div>
+                <a class="button">I understand</a>
+                
+            </div>
+            <div class="loading-section">
+                <div class="text">Loading...</div>
+                <div class="barholder">
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="byline">
+                Lovingly made by <a target="_blank" href="http://twitter.com/aliceandstuff">@aliceandstuff</a>
+            </div>
+        </div>
+        <div class="head">
+            JoCoCruiseCrazy 2 Photo Gallery
+        </div>
+        <div class="carousel vheight">
+            <div class="frame vheight">
+                <div class="slide">
+                    <div class="photo-day vheight"></div>
+                    <div class="photo-day vheight"></div>
+                    <div class="photo-day vheight"></div>
+                    <div class="photo-day vheight"></div>
+                    <div class="photo-day vheight"></div>
+                    <div class="photo-day vheight"></div>
+                    <div class="photo-day vheight"></div>
+                </div>
+            </div>
+            <div class="contributors vheight">
+                <div class="title">Contributors</div>
+                <div id="contribframe">
+                    <div class='contriband'>
+                        <div class="name-list vheight"></div>
+                        <div class="name-list vheight"></div>
+                        <div class="name-list vheight"></div>
+                        <div class="name-list vheight"></div>
+                        <div class="name-list vheight"></div>
+                        <div class="name-list vheight"></div>
+                        <div class="name-list vheight"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rope">
+            <div id="slider">
+                <span class="yui3-slider-rail">
+                    <span class="yui3-slider-thumb"></span>
+                </span>
+            </div>
+            <div class="marker day1 hover">Day 1</div>
+            <div class="marker day2">Day 2</div>
+            <div class="marker day3">Day 3</div>
+            <div class="marker day4">Day 4</div>
+            <div class="marker day5">Day 5</div>
+            <div class="marker day6">Day 6</div>
+            <div class="marker day7">Day 7</div>
+        </div>
+        <div id="mask"></div>
+        <div id="full">
+            <img id="full-img">
+            <div class="info">
+                <a target="author" class="title"></a>
+                By <a target="author"class="author"></a>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="http://yui.yahooapis.com/combo?3.4.1/build/yui-base/yui-base-min.js&3.4.1/build/oop/oop-min.js&3.4.1/build/event-custom-base/event-custom-base-min.js&3.4.1/build/event-custom-complex/event-custom-complex-min.js&3.4.1/build/attribute-base/attribute-base-min.js&3.4.1/build/attribute-complex/attribute-complex-min.js&3.4.1/build/features/features-min.js&3.4.1/build/dom-core/dom-core-min.js&3.4.1/build/dom-base/dom-base-min.js&3.4.1/build/selector-native/selector-native-min.js&3.4.1/build/selector/selector-min.js&3.4.1/build/node-core/node-core-min.js&3.4.1/build/node-base/node-base-min.js&3.4.1/build/event-base/event-base-min.js&3.4.1/build/event-synthetic/event-synthetic-min.js&3.4.1/build/event-focus/event-focus-min.js&3.4.1/build/base-base/base-base-min.js&3.4.1/build/pluginhost-base/pluginhost-base-min.js&3.4.1/build/pluginhost-config/pluginhost-config-min.js&3.4.1/build/base-pluginhost/base-pluginhost-min.js&3.4.1/build/dom-style/dom-style-min.js&3.4.1/build/node-style/node-style-min.js&3.4.1/build/classnamemanager/classnamemanager-min.js&3.4.1/build/widget-base/widget-base-min.js&3.4.1/build/widget-htmlparser/widget-htmlparser-min.js&3.4.1/build/event-delegate/event-delegate-min.js&3.4.1/build/node-event-delegate/node-event-delegate-min.js&3.4.1/build/widget-uievents/widget-uievents-min.js&3.4.1/build/widget-skin/widget-skin-min.js&3.4.1/build/node-pluginhost/node-pluginhost-min.js&3.4.1/build/dom-screen/dom-screen-min.js&3.4.1/build/node-screen/node-screen-min.js&3.4.1/build/base-build/base-build-min.js&3.4.1/build/yui-throttle/yui-throttle-min.js&3.4.1/build/dd-ddm-base/dd-ddm-base-min.js&3.4.1/build/dd-drag/dd-drag-min.js&3.4.1/build/dd-constrain/dd-constrain-min.js&3.4.1/build/substitute/substitute-min.js&3.4.1/build/slider-base/slider-base-min.js&3.4.1/build/slider-value-range/slider-value-range-min.js&3.4.1/build/clickable-rail/clickable-rail-min.js&3.4.1/build/range-slider/range-slider-min.js"></script>
+        <script src="rsrc/carousel.js"></script>
+    </body>
+</html>
